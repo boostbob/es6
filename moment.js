@@ -17,3 +17,6 @@ class Person {
 
 let p = new Person();
 console.log(p.say.call());
+
+
+console.log(moment().format('YYYY-MM-DD HH:mm:ss'));
