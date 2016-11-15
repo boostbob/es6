@@ -1,14 +1,14 @@
 var shortid = require('shortid');
 //shortid.characters('ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ①②③④⑤⑥⑦⑧⑨⑩⑪⑫');
 
-shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@');
+//shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@');
 
-shortid.seed(new Date().getTime());
+//shortid.seed(new Date().getTime());
 
 var x = 0;
 var array = [];
 
-while(x++ < 1000) {
+while(x++ < 10000) {
 	var code = shortid.generate();
 	console.log(code);
 	
@@ -16,7 +16,7 @@ while(x++ < 1000) {
 		array.push(code);
 }
 
-console.log(array.length * 100 / 1000.0);
+console.log(array.length * 100 / 10000.0);
 
 // urn42AJORMi
 // 9r34khGORM1

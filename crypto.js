@@ -1,7 +1,8 @@
-var crypto = require('crypto')
+var crypto = require('crypto');
 
 function generateToken() {
-	return crypto.randomBytes(10).toString('base64');
+	// return crypto.randomBytes(10).toString('base64');
+	return crypto.randomBytes(10).toString('hex');
 }
 
 var x = 0;
