@@ -70,3 +70,5 @@ console.error(moment('2016-09-15 00:00:00').format('YYYY-MM-DD HH:mm:ss'));
 //console.log(moment.unix(1380000000));
 console.log(moment('2016-11-12 10:00:00').valueOf());
 console.log(moment.unix(1481299199).format('YYYY-MM-DD HH:mm:ss'));
+
+console.log(moment().valueOf());
