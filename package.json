@@ -26,9 +26,11 @@
   "dependencies": {
     "ali-oss": "^4.6.2",
     "babel-polyfill": "^6.16.0",
+    "bluebird-retry": "^0.10.1",
     "body-parser": "^1.15.2",
     "call-me-maybe": "^1.0.1",
     "chance": "^1.0.3",
+    "co": "^4.6.0",
     "compression": "^1.6.2",
     "connect": "^3.5.0",
     "cookie-session": "^2.0.0-alpha.2",
