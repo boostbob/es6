@@ -2,8 +2,8 @@ var OSS = require('ali-oss').Wrapper;
 
 var client = new OSS({
 	region: 'oss-cn-shanghai',
-	accessKeyId: 'LTAIVlh3E7drMF4i',
-	accessKeySecret: 'FcNJZicCEviSQ9FetrtrXv2rzX94ZK',
+	accessKeyId: 'xxx',
+	accessKeySecret: 'xxx',
 	bucket: 'moreteacher-development'
 });
 
