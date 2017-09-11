@@ -5,6 +5,7 @@ class Goods {
 }
 
 var goodsHandler = {
+	// 构造器 
 	construct(target, args, newTarget) {
 		if (args[0] == 1)
 			return new Object("obj");
