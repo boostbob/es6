@@ -10,7 +10,6 @@ var knex = require('knex')({
 });
 
 knex.transaction(function(trx) {
-
   var books = [
     {title: 'Canterbury Tales'},
     {title: 'Moby Dick'},
@@ -18,7 +17,7 @@ knex.transaction(function(trx) {
   ];
 
   return trx
-    .insert({id: 1, name: 'Old Books'}, 'id')
+    .insert({name: 'Old Books'}, 'id')
     .into('catalogues')
     .then(function(ids) {
       return Promise.map(books, function(book) {

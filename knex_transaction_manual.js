@@ -10,7 +10,6 @@ var knex = require('knex')({
 });
 
 knex.transaction(function(trx) {
-
   var books = [
     {title: 'Canterbury Tales'},
     {title: 'Moby Dick'},
