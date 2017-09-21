@@ -20,6 +20,9 @@ knex.transaction(function(trx) {
     .insert({name: 'Old Books'}, 'id')
     .into('catalogues')
     .then(function(ids) {
+      throw new Error('can rollback?');
+      // return Promise.reject('can rollback?');
+      
       return Promise.map(books, function(book) {
         book.catalogue_id = ids[0];
         return trx.insert(book).into('books');
