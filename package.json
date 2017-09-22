@@ -44,6 +44,7 @@
     "ioredis": "^3.1.4",
     "knex": "^0.13.0",
     "lodash": "^4.13.1",
+    "memwatch-next": "^0.3.0",
     "moment": "^2.14.1",
     "mongolass": "^2.4.5",
     "node-fetch": "^1.5.3",
