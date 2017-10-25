@@ -14,7 +14,7 @@ const app = {
       return () => fn(ctx, next);
     // }, this.callback.bind(this, ctx));
     // initial(the first next)
-    }, function() {console.error('start')});
+    }, () => {console.error('start')});
     
     func();
   }
