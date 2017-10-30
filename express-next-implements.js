@@ -10,7 +10,9 @@ const app = {
     console.error(this.middleware, this.middleware.length);
     // console.error(this.callback.toString());
     var func = this.middleware.reduceRight((next, fn, index) => {
-      console.error(index, '=>', next.toString());
+      // console.error(fn.toString());
+      // console.error(index, '=>', next.toString());
+      console.error(index, '=>', next.toString(), fn.toString());
       return () => fn(ctx, next);
     // }, this.callback.bind(this, ctx));
     // initial(the first next)

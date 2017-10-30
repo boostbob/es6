@@ -4,7 +4,8 @@ var zip = new JSZip();
 
 zip.file('hello.txt', 'Hello World!');
 
-zip.generateNodeStream({type: 'nodebuffer', streamFiles: true})
+zip
+.generateNodeStream({type: 'nodebuffer', streamFiles: true})
 .pipe(fs.createWriteStream('/tmp/test.zip'))
 .on('finish', function () {
   // JSZip generates a readable stream with a "end" event,
