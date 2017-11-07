@@ -61,6 +61,7 @@
     "pubsub-js": "^1.5.7",
     "redis": "^2.8.0",
     "restify": "^4.1.1",
+    "server": "^1.0.1",
     "shortid": "^2.2.6",
     "sinon": "^3.3.0",
     "tracer": "^0.8.9",
