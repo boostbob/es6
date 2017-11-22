@@ -52,6 +52,7 @@
     "memwatch-next": "^0.3.0",
     "moment": "^2.14.1",
     "mongolass": "^2.4.5",
+    "mongoose": "^4.13.4",
     "mustache": "^2.3.0",
     "node-fetch": "^1.5.3",
     "nunjucks": "^3.0.1",
@@ -67,6 +68,7 @@
     "tracer": "^0.8.9",
     "underscore": "^1.8.3",
     "wechat-oauth": "^1.1.1",
+    "xlsx": "^0.11.8",
     "xml2js": "^0.4.17"
   },
   "scripts": {
