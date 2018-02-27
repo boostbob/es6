@@ -14,7 +14,7 @@ let last = amount;
 let prices = [
   6253, 6533, 7012, 7261, 7265, 7476, 7274, 7143, 7390, 7255, 
   6965, 6548, 6098, 6354, 6598, 7058, 7486, 7844, 7711, 7842,
-  8116, 8131, 8196, 8188, 8184, 8490, 9096, 9666, 9972, 9999
+  8116, 8131, 8196, 8188, 8184, 8490, 9096, 9666, 9972, 6253
 ];
 
 prices.forEach((price, index) => {
@@ -45,7 +45,7 @@ prices.forEach((price, index) => {
 });
 
 // conclusion:
-// 1. the last price is very important
+// 1. the last price is very important (usdt+)
 // 2. the lowest price the very important (coins+)
 
 console.error(`\nlast = ${(last * RATE).toFixed(2)}, earnings = ${((last - amount) * 100 / amount).toFixed(2)}%`);
