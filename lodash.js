@@ -30,3 +30,5 @@ _.each([1,2,3], function(v){
 
 let array = ['a', 'c'];
 console.log(_.pull(['a', 'c', 'b', 'a', 'c'], ...array));
+
+console.log(_.random(0, 12))
