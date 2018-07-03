@@ -7,10 +7,7 @@ async function main() {
     {
       name: 'action',
       type: 'confirm'
-    }
-  ]);
-  
-  answers = await inquirer.prompt([
+    },
     {
       name: 'action',
       type: 'list',
@@ -18,6 +15,18 @@ async function main() {
       choices: ['wait', 'break', 'exit']
     }
   ]);
+  
+  // answers = await inquirer.prompt([
+  //   {
+  //     name: 'action',
+  //     type: 'list',
+  //     message: 'Can i do help you?',
+  //     choices: ['wait', 'break', 'exit']
+  //   }
+  // ]);
+  
+  // { action: 'break' }
+  console.error(answers);
 }
 
 main();
